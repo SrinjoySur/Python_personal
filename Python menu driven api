@@ -1,0 +1,36 @@
+import os
+os.system("tput setaf 1")
+print("\t\t\tWelcome to Linux World")
+
+os.system("tput setaf 7")
+print("\t\t\t----------------------")
+
+
+while True:
+        print("""
+        Press 1: To see date
+        Press 2: To check cal
+        Press 3: To show current account
+        Press 4: To open web browser
+        Press 5: To exit
+        """
+        )
+
+
+        ch = input("Enter your Choice : ")
+        print(ch)
+
+        if ("date" in ch)  and    ( not ("not" in ch) ):
+                os.system("date")
+        elif ("cal" in ch)  and    ( not ("not" in ch) ):
+                os.system("cal")
+        elif ("user" in ch)  and    ( not ("not" in ch) ):
+                os.system("whoami")
+        elif ("web" in ch)  and    ( not ("not" in ch) ):
+                os.system("firefox")
+        elif ("exit" in ch)  and    ( not ("not" in ch) ):
+                exit()
+        else:
+                print("no support")
+input("press enter to cont .... ")
+os.system("clear")
