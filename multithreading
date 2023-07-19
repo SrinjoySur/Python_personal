@@ -1,0 +1,16 @@
+import thread
+def firstFunction():
+    count = 0
+    while(count<10):
+        print('a')
+        count = count + 1
+
+def secondFunction():
+    count = 0
+    while(count<10):
+        print('b')
+        count = count + 2
+
+thread.start_new_thread( firstFunction, () )
+thread.start_new_thread( secondFunction, () )
+print("hi")
